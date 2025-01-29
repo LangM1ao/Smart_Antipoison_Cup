@@ -14,6 +14,20 @@
 - **LED Light** (alerts when pH is unsafe)
 - **Servo Motor** (automatically locks lid)
 
+##  Wiring Guide
+
+### **Hardware Connections**
+
+| **Component**       | **Arduino Pin**        |
+|---------------------|-----------------------|
+| **pH Sensor**      | `A0` (Analog Input)   |
+| **OLED Display**   | `SCL -> A5, SDA -> A4` (I2C) |
+| **LED Indicator**  | `D7` (Digital Output) |
+| **Servo Motor**    | `D6` (PWM Control)    |
+| **Power (VCC)**    | `5V`                  |
+| **Ground (GND)**   | `GND`                 |
+
+
 ##  Code Example
 ```cpp
 float pHValue = 7 + ((2.5 - voltage) / 0.167);
@@ -33,6 +47,15 @@ Serial.println(pHValue);
 4.  **Upload the code to your device.**
 
 5.  **Check the OLED display for pH readings!**
+
+---
+
+##  Future Improvements
+-  **Bluetooth/WiFi Connectivity** - Enable wireless data transmission to a mobile app
+-  **Power Optimization** - Reduce energy consumption for longer battery life
+-  **Advanced pH Calibration** - Improve accuracy with enhanced calibration algorithms
+-  **Cloud Data Storage** - Store and analyze pH data remotely
+-  **Expanded Water Quality Analysis** - Extend detection to include temperature, conductivity, and other parameters
 
 ---
 
