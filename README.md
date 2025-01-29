@@ -19,7 +19,8 @@
 float pHValue = 7 + ((2.5 - voltage) / 0.167);
 Serial.print("pH Value: ");
 Serial.println(pHValue);
-## 🔄 Installation & Usage
+```
+##   
 
 1. **Clone this repository**:
    ```bash
@@ -35,14 +36,14 @@ Serial.println(pHValue);
 
 ---
 
-## 📜 License
+##  License
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## 🤝 Contributing
 Contributions are **welcome**!  
-1. **Fork this repository** 📌  
+1. **Fork this repository**   
 2. **Create a new branch** (`git checkout -b feature-branch`)  
 3. **Commit your changes** (`git commit -m "Added new feature"`)  
 4. **Push to GitHub** (`git push origin feature-branch`)  
